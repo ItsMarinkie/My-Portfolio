@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+
+</head>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b76ed2248b.js" crossorigin="anonymous"></script>
+    <title>Personal Portfolio</title>
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1 class="name-logo">Marinkie Pilusa</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="row">
+            <div class="header-text about-col-2">
+                <h1>Software Developer</h1>
+                <p>I'm a sofware developer with a knack for transforming ideas into interactive, user-friendly websites. My passion lies in writing clean, efficient code that brings digital experiences to life</p>
+                <div class="social-icons">
+                    <a href="https://github.com/ItsMarinkie"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/marinkiepilusa/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="about-col-1">
+                <img src="images/background.JPG" >
+            </div>
+    </div>
+</div>
+
+<!---------------------------------------about me-------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/IMG-20241026-WA0030.jpg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Hi there! I’m Marinkie, a software developer with a passion for crafting clean and functional web applications. My journey into coding began with a fascination for how websites work behind the scenes, and since then, I’ve dedicated myself to mastering front-end development.
+
+                    I hold a Bachelor's degree in Computer Science from the University of Limpopo, where I developed a solid foundation in programming and problem-solving. Over time, I’ve become proficient in HTML, CSS, JavaScript, and Vue.js, using these tools to build responsive and user-friendly websites.
+
+                   <br><br><span style="margin-top: 20px"> What excites me most about development is the continuous learning it offers. I’m always exploring new technologies and frameworks to enhance my skill set and create even better digital experiences. Whether it's a small personal project or collaborating on a team, I bring creativity, attention to detail, and a relentless drive to every line of code I write.
+
+                    When I’m not coding, you can find me hanging with my family, or "exploring the latest tech trends" or just working on personal side projects. I’m excited to grow my career in software development and contribute to projects that make a real impact. </span></p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('technical-skills')">Technical Skills</p>
+                    <p class="tab-links" onclick="opentab('soft-skills')">Soft Skills</p>
+                    <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="experience">
+                <ul>
+                    <li><span>2023 - current</span><br>Junior developer at MiWay</li>
+                    <li><span>2022 - 2023</span><br>IT Development intern at MiWay</li>
+                </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bsc in Computer Science</span><br>University Of Limpopo</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="technical-skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>JavaScript, Java, HTML & CSS, PHP</li>
+                        <li><span>Frameworks & Tools</span><br>Vue, Vuetify, Bootstrap, Figma, Github, BrowserStack, LambdaTest</li>
+                        <li><span>Databases</span><br>MySQL, Python</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="soft-skills">
+                    <ul>
+                        <li><span>Analytical Thinking</span><br>Proven ability to analyze complex data and develop strategic solutions.</li>
+                        <li><span>Team Collaboration</span><br>Experienced in working collaboratively in diverse teams to achieve project goals.</li>
+                        <li><span>Problem-Solving</span><br>Adept at critical thinking and resolving complex challenges.</li>
+                        <li><span>Adaptability</span><br>Strong verbal and written communication skills, with the ability to convey complex ideas effectively.</li>
+                        <li><span>Communication</span><br>Adept at critical thinking and resolving complex challenges.</li>
+                        <li><span>Leadership</span><br> Demonstrated leadership in academic or extracurricular activities.</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                        <li><span>Alison Academy</span><br>Fundamentals of JavaScript and DOM</li>
+                        <li><span>GirlCode</span><br>Java Bootcamp</li>
+                        <li><span>Udemy</span><br> The Complete 2024 Software Testing Bootcamp</li>
+                        <li><span>Great Learning</span><br>UI/UX for beginners</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------------services------------------------>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>As a web developer, I specialize in creating modern, responsive websites that offer great user experiences. I work with a variety of technologies to build scalable and high-performing web applications tailored to your needs. </p>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-figma"></i>
+                <h2>Software Quality Assurance</h2>
+                <p>With a focus on clean, bug-free code, I ensure that your software works flawlessly across different platforms. I use manual and automated testing to deliver high-quality, reliable applications every time.</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h2>App development</h2>
+                <p>I design and build native and cross-platform mobile applications that deliver an intuitive experience. Whether you're targeting iOS or Android, I create mobile apps that meet your business goals and user needs.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------Portfolio-------------->
+
+<div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/theme-switch.png">
+                <div class="layer">
+                    <h3>Theme switch</h3>
+                    <p>switch between dark mode and light mode</p>
+                    <a href="https://github.com/ItsMarinkie/Dark-Light-Mode"><i class="fa-brands fa-github"><h6>github</h6></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/todo%20app.png">
+                <div class="layer">
+                    <h3>To-do App</h3>
+                    <p>An app that allows users to add, edit, and remove tasks</p>
+                    <a href="https://github.com/ItsMarinkie/To-do-app"><i class="fa-brands fa-github"><h6>github</h6></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/weather-app.png">
+                <div class="layer">
+                    <h3>Weather App</h3>
+                    <p>An app that fetches weather data from a public API and displays current weather information based on user input (city name)</p>
+                    <a href="https://github.com/ItsMarinkie/weather-app"><i class="fa-brands fa-github"><h6>github</h6></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/ItsMarinkie" class="btn">See more</a>
+    </div>
+</div>
+</div>
+
+<!---------------------------contact------------------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>Marinkiepilusa@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>0630985057</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/marinkiepilusa/"><i class="fa-brands fa-linkedin"></i></a>linkedin.com/in/marinkiepilusa
+                </div>
+                <a href="images/Marinkie%20Pilusa%20Resume.pdf" download class="btn btn-two">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="text" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn-two">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p class=""> Copyright © Marinkie. Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add('active-tab')
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0"
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px"
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyZO7tGJfWOPZArc1-RkUdIqRolcrWG3V1AchYrzBv-PIFOReslPecuDjQj5f9XnC-IGA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function (){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
